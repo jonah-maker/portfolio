@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonah — Contemporary Fashion Designer</title>
+    <meta name="description"
+        content="Jonah is a contemporary fashion designer crafting minimalist, luxury garments that merge architectural precision with raw emotion.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <span class="loader-text">JONAH</span>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#hero" class="nav-logo">JONAH</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#collections" class="nav-link">Collections</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#studio" class="nav-link">Studio</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#collections" class="mobile-link">Collections</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#studio" class="mobile-link">Studio</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=1920&q=80" alt="Fashion editorial"
+                class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow reveal">SS26 — Now Showing</p>
+            <h1 class="hero-title reveal">
+                <span class="hero-title-line">Jonah</span>
+                <span class="hero-title-divider"></span>
+                <span class="hero-title-sub">Contemporary Fashion Designer</span>
+            </h1>
+            <p class="hero-tagline reveal">Where architecture meets skin. Garments sculpted from silence, shadow, and
+                the tension between restraint and desire.</p>
+            <a href="#collections" class="hero-cta reveal">Explore Collections</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <div class="section-header reveal">
+            <p class="section-eyebrow">The Work</p>
+            <h2 class="section-title">Collections</h2>
+            <p class="section-subtitle">Each collection is a chapter — an exploration of form, fabric, and the human
+                silhouette.</p>
+        </div>
+        <div class="collections-grid">
+            <!-- Collection 1 -->
+            <div class="collection-card reveal" data-project="noir">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80"
+                        alt="Noir Essence Collection" class="card-image">
+                    <div class="card-overlay">
+                        <span class="card-view">View Lookbook</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Noir Essence</h3>
+                    <p class="card-season">AW25</p>
+                </div>
+            </div>
+            <!-- Collection 2 -->
+            <div class="collection-card reveal" data-project="desert">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1485462537746-965f33f7f6a7?w=800&q=80"
+                        alt="Desert Mirage Collection" class="card-image">
+                    <div class="card-overlay">
+                        <span class="card-view">View Lookbook</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Desert Mirage</h3>
+                    <p class="card-season">SS25</p>
+                </div>
+            </div>
+            <!-- Collection 3 -->
+            <div class="collection-card reveal" data-project="urban">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80"
+                        alt="Urban Silhouette Collection" class="card-image">
+                    <div class="card-overlay">
+                        <span class="card-view">View Lookbook</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Urban Silhouette</h3>
+                    <p class="card-season">AW24</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Noir Essence -->
+    <div class="project-modal" id="modal-noir">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-content">
+            <div class="modal-hero">
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1400&q=80" alt="Noir Essence">
+                <div class="modal-hero-overlay">
+                    <p class="modal-eyebrow">AW25 Collection</p>
+                    <h2 class="modal-title">Noir Essence</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Concept</h3>
+                    <p>Noir Essence is a meditation on darkness — not as absence, but as a presence. This collection
+                        explores the weight and warmth of black, revealing the spectrum of emotion hidden within a
+                        single color. Each piece is an architecture of shadow, constructed to move with the body like a
+                        second skin.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Design Inspiration</h3>
+                    <p>Inspired by the charcoal drawings of Robert Longo, the brutalist architecture of Tadao Ando, and
+                        the quiet power of Japanese ink painting. The collection channels the tension between strength
+                        and vulnerability, between armor and intimacy.</p>
+                </div>
+                <div class="modal-gallery">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80"
+                        alt="Noir look 1">
+                    <img src="https://images.unsplash.com/photo-1495385794356-15371f348c31?w=600&q=80"
+                        alt="Noir look 2">
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&q=80"
+                        alt="Noir look 3">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-detail">
+                        <h4>Fabrics</h4>
+                        <p>Japanese wool crêpe, double-faced cashmere, silk organza, bonded neoprene, hand-waxed cotton
+                        </p>
+                    </div>
+                    <div class="modal-detail">
+                        <h4>Techniques</h4>
+                        <p>Laser-cut paneling, ultrasonic seam bonding, hand-pressed pleating, raw-edge finishing</p>
+                    </div>
+                    <div class="modal-detail">
+                        <h4>Palette</h4>
+                        <p>Jet black, charcoal, obsidian, smoke grey, off-black</p>
+                    </div>
+                </div>
+                <div class="modal-section">
+                    <h3>Creative Process</h3>
+                    <p>The collection began with a series of draping experiments on the stand, working exclusively in
+                        black muslin. Each garment was deconstructed and rebuilt multiple times, stripping away the
+                        unnecessary until only the essential remained. The final pieces carry the memory of their making
+                        — raw edges, visible construction, and the ghost of the hand.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desert Mirage -->
+    <div class="project-modal" id="modal-desert">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-content">
+            <div class="modal-hero">
+                <img src="https://images.unsplash.com/photo-1485462537746-965f33f7f6a7?w=1400&q=80" alt="Desert Mirage">
+                <div class="modal-hero-overlay">
+                    <p class="modal-eyebrow">SS25 Collection</p>
+                    <h2 class="modal-title">Desert Mirage</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Concept</h3>
+                    <p>Desert Mirage captures the ephemeral beauty of heat shimmer and sand dunes — garments that appear
+                        to shift and dissolve as they move. This collection is an ode to the nomadic spirit, where
+                        clothing becomes shelter, landscape, and identity all at once.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Design Inspiration</h3>
+                    <p>Drawn from the textiles of the Saharan Tuareg, the land art of Walter De Maria, and the
+                        photography of Nadav Kander. The palette is born from the earth itself — sun-bleached bone,
+                        terracotta at dusk, and the silver-blue of desert nights.</p>
+                </div>
+                <div class="modal-gallery">
+                    <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80" alt="Desert look 1">
+                    <img src="https://images.unsplash.com/photo-1475180098004-ca77a66827be?w=600&q=80"
+                        alt="Desert look 2">
+                    <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600&q=80"
+                        alt="Desert look 3">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-detail">
+                        <h4>Fabrics</h4>
+                        <p>Washed linen, raw silk tussah, hand-loomed cotton, vegetable-tanned leather, hemp-silk blend
+                        </p>
+                    </div>
+                    <div class="modal-detail">
+                        <h4>Techniques</h4>
+                        <p>Natural dye baths (indigo, walnut, pomegranate), hand-smocking, sand-washed finishing,
+                            macramé knotwork</p>
+                    </div>
+                    <div class="modal-detail">
+                        <h4>Palette</h4>
+                        <p>Sand, bone white, terracotta, dusty rose, clay, desert sage</p>
+                    </div>
+                </div>
+                <div class="modal-section">
+                    <h3>Creative Process</h3>
+                    <p>Development began with a research trip to Morocco, studying the geometry of Berber textiles and
+                        the way light transforms the landscape hour by hour. Fabrics were left outdoors for weeks,
+                        exposed to sun and wind, allowing nature to collaborate in the finishing. Every garment carries
+                        the story of that exposure — the softness of time, the warmth of earth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Urban Silhouette -->
+    <div class="project-modal" id="modal-urban">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-content">
+            <div class="modal-hero">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1400&q=80"
+                    alt="Urban Silhouette">
+                <div class="modal-hero-overlay">
+                    <p class="modal-eyebrow">AW24 Collection</p>
+                    <h2 class="modal-title">Urban Silhouette</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Concept</h3>
+                    <p>Urban Silhouette is a study of the human form against the city skyline — sharp, geometric,
+                        monumental. This collection transforms the language of architecture into wearable sculpture,
+                        with clean lines that echo glass facades and structural engineering.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Design Inspiration</h3>
+                    <p>Inspired by the architectural photography of Hélène Binet, the geometric paintings of Kazimir
+                        Malevich, and the structural ambition of Zaha Hadid. The collection asks: what happens when a
+                        building becomes a garment?</p>
+                </div>
+                <div class="modal-gallery">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80"
+                        alt="Urban look 1">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&q=80"
+                        alt="Urban look 2">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&q=80"
+                        alt="Urban look 3">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-detail">
+                        <h4>Fabrics</h4>
+                        <p>Technical gabardine, bonded wool, coated cotton, laser-cut neoprene, reflective nylon</p>
+                    </div>
+                    <div class="modal-detail">
+                        <h4>Techniques</h4>
+                        <p>3D pattern engineering, heat-bonded seams, architectural draping, injection-molded hardware
+                        </p>
+                    </div>
+                    <div class="modal-detail">
+                        <h4>Palette</h4>
+                        <p>Concrete grey, steel blue, midnight, chalk white, graphite</p>
+                    </div>
+                </div>
+                <div class="modal-section">
+                    <h3>Creative Process</h3>
+                    <p>Each silhouette began as a paper model — folded, cut, and assembled like a miniature building.
+                        These maquettes were then translated into toiles, preserving the sharp folds and cantilever
+                        structures of the original paper forms. The collection celebrates precision and the beauty of
+                        things that are engineered rather than merely sewn.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-inner">
+            <div class="about-image reveal">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80" alt="Jonah portrait">
+                <div class="about-image-accent"></div>
+            </div>
+            <div class="about-content reveal">
+                <p class="section-eyebrow">The Designer</p>
+                <h2 class="section-title">About Jonah</h2>
+                <div class="about-text">
+                    <p class="about-lead">Fashion is architecture for the body — a dialogue between structure and
+                        sensation, between the garment and the person who inhabits it.</p>
+                    <p>Jonah is a contemporary fashion designer whose work exists at the intersection of minimalism and
+                        emotion. Trained at Central Saint Martins and mentored in the ateliers of Paris, his approach to
+                        design is rooted in the belief that every seam tells a story and every silhouette is a statement
+                        of intent.</p>
+                    <p>His collections are defined by their sculptural quality — garments that appear simple on the
+                        surface but reveal extraordinary complexity in their construction. Working primarily with
+                        natural fabrics sourced from artisan mills in Japan and Italy, Jonah creates pieces that age
+                        beautifully, developing character and depth with wear.</p>
+                    <p>His design philosophy rejects the disposable. Each collection is conceived as a permanent
+                        wardrobe — timeless pieces that transcend seasons and trends, built to be worn, loved, and
+                        passed on.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Collections</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Awards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio / Behind the Scenes Section -->
+    <section class="studio" id="studio">
+        <div class="studio-hero reveal">
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=1600&q=80" alt="Studio process">
+            <div class="studio-hero-overlay">
+                <p class="section-eyebrow">Behind the Scenes</p>
+                <h2 class="section-title">The Studio</h2>
+            </div>
+        </div>
+        <div class="studio-content">
+            <div class="studio-grid">
+                <div class="studio-block reveal">
+                    <span class="studio-number">01</span>
+                    <h3>Research & Concept</h3>
+                    <p>Every collection begins with immersion — months of research into art, architecture, material
+                        science, and cultural history. Mood boards give way to material experiments, and slowly a visual
+                        language emerges.</p>
+                </div>
+                <div class="studio-block reveal">
+                    <span class="studio-number">02</span>
+                    <h3>Draping & Toile</h3>
+                    <p>Design happens on the stand, not the sketch pad. Jonah drapes directly in muslin, letting the
+                        fabric guide the form. Each toile is fitted, deconstructed, and rebuilt — sometimes dozens of
+                        times before a shape feels right.</p>
+                </div>
+                <div class="studio-block reveal">
+                    <span class="studio-number">03</span>
+                    <h3>Fabric Sourcing</h3>
+                    <p>Relationships with multigenerational mills in Biella, Kyoto, and Mumbai provide access to
+                        extraordinary textiles. Fabrics are chosen not just for how they look, but for how they drape,
+                        age, and feel against the skin.</p>
+                </div>
+                <div class="studio-block reveal">
+                    <span class="studio-number">04</span>
+                    <h3>Construction</h3>
+                    <p>Final garments are constructed in the studio by a small team of master tailors. Every seam is
+                        considered, every hem weighted, every button hand-sewn. The construction is the design — there
+                        is no separation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <div class="contact-info reveal">
+                <p class="section-eyebrow">Get in Touch</p>
+                <h2 class="section-title">Collaborate</h2>
+                <p class="contact-text">For press inquiries, stockist information, or creative collaborations, reach out
+                    through the form or connect on social media.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <circle cx="12" cy="12" r="5" />
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Pinterest">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12c0 4.25 2.67 7.9 6.44 9.34-.09-.78-.17-2 .04-2.86.18-.78 1.17-4.97 1.17-4.97s-.3-.6-.3-1.47c0-1.38.8-2.41 1.8-2.41.85 0 1.26.64 1.26 1.4 0 .85-.54 2.12-.82 3.3-.24.99.5 1.8 1.47 1.8 1.76 0 3.12-1.86 3.12-4.55 0-2.38-1.71-4.04-4.15-4.04-2.83 0-4.49 2.12-4.49 4.31 0 .85.33 1.77.74 2.27.08.1.09.19.07.29-.08.31-.25.99-.28 1.13-.05.18-.15.22-.34.13-1.25-.58-2.03-2.41-2.03-3.88 0-3.16 2.3-6.06 6.63-6.06 3.48 0 6.19 2.48 6.19 5.79 0 3.46-2.18 6.24-5.2 6.24-1.02 0-1.97-.53-2.3-1.15l-.62 2.38c-.23.88-.84 1.97-1.25 2.64.94.29 1.94.45 2.97.45 5.52 0 10-4.48 10-10S17.52 2 12 2z" />
+                        </svg>
+                        <span>Pinterest</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Behance">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M3 12h6c1.66 0 3-1.34 3-3s-1.34-3-3-3H3v12h6.5c1.93 0 3.5-1.57 3.5-3.5S11.43 12 9.5 12" />
+                            <path d="M15 8h6M15 16h6M18 8c-1.66 0-3 1.79-3 4s1.34 4 3 4 3-1.79 3-4-1.34-4-3-4z" />
+                        </svg>
+                        <span>Behance</span>
+                    </a>
+                </div>
+                <a href="mailto:jonahratan15@gmail.com" class="contact-email">jonahratan15@gmail.com</a>
+            </div>
+            <div class="contact-form-wrapper reveal">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" required>
+                            <option value="" disabled selected>Subject</option>
+                            <option value="press">Press Inquiry</option>
+                            <option value="stockist">Stockist Information</option>
+                            <option value="collaboration">Creative Collaboration</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-logo">JONAH</span>
+            <p class="footer-copy">&copy; 2026 Jonah Studio. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#collections">Collections</a>
+                <a href="#about">About</a>
+                <a href="#studio">Studio</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
